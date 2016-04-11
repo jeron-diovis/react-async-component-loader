@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "Basic boilerplate",
   "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeron-diovis/package-boilerplate.git"
+  },
   "scripts": {
     "test": "karma start",
     "test:watch": "npm test -- --single-run=false",
