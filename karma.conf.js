@@ -39,6 +39,10 @@ module.exports = function (config) {
             loader: "babel"
           }
         ]
+      },
+      eslint: {
+        failOnError: true,
+        failOnWarning: false
       }
     },
     webpackServer: {
