@@ -26,7 +26,7 @@ module.exports = {
 
   eslint: {
     failOnError: true,
-    failOnWarning: false
+    failOnWarning: true
   },
 
   module: {
