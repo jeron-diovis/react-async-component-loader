@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jeron-diovis/package-boilerplate.git"
+    "url": "git@github.com:jeron-diovis/package-boilerplate.git"
   },
   "scripts": {
     "test": "karma start",
