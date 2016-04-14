@@ -67,7 +67,7 @@
     ],
     "no-duplicate-imports": 2,
     "no-useless-constructor": 2,
-    "no-use-before-define": 2,
+    "no-use-before-define": [2, { "functions": false, "classes": false }],
     "quotes": [
       2,
       "double"
