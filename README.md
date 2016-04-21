@@ -5,7 +5,9 @@ Basic frontend boilerplate
 * babel
 * webpack
 * eslint
-* karma -> mocha + chai + sinon
+* mocha + chai + sinon
+
+For env with in-browser testing there is a **karma** branch.
 
 ### Commands
 ```
