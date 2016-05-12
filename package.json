@@ -38,6 +38,8 @@
     "mocha": "^2.4.5",
     "parallelshell": "^2.0.0",
     "sinon": "^1.17.3",
-    "webpack": "^1.12.14"
+    "webpack": "^1.12.14",
+    "webpack-error-notification": "^0.1.6",
+    "webpack-info-plugin": "^0.1.0"
   }
 }
