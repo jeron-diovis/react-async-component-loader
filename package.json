@@ -7,6 +7,10 @@
     "type": "git",
     "url": "https://github.com/jeron-diovis/package-boilerplate"
   },
+  "files": [
+    "dist",
+    "lib"
+  ],
   "scripts": {
     "test": "mocha",
     "test:watch": "npm test -- --watch",
