@@ -21,8 +21,7 @@
     "build": "npm run build:transpile && npm run build:bundle",
     "build:bundle": "webpack",
     "build:transpile": "babel src -d lib",
-    "prebuild": "npm run lint && npm test && npm run clean",
-    "prepublish": "npm run build"
+    "prebuild": "npm run lint && npm test && npm run clean"
   },
   "author": "Jeron Diovis <void.jeron.diovis@gmail.com>",
   "license": "MIT",
