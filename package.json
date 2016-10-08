@@ -1,27 +1,23 @@
 {
-  "name": "package-boilerplate",
-  "version": "0.0.1",
-  "description": "Basic boilerplate",
+  "name": "react-async-component-loader",
+  "version": "1.0.0",
+  "description": "Lazy load your components, wrapping them into preloader component",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jeron-diovis/package-boilerplate"
+    "url": "https://github.com/jeron-diovis/react-async-component-loader"
   },
   "files": [
-    "dist",
     "lib"
   ],
   "scripts": {
-    "test": "mocha",
-    "test:watch": "npm test -- --watch",
     "lint": "esw src",
     "lint:watch": "npm run lint -- -w",
-    "start": "parallelshell 'npm run test:watch' 'npm run lint:watch'",
-    "clean": "rm -rf dist lib",
-    "build": "npm run build:transpile && npm run build:bundle",
-    "build:bundle": "webpack",
-    "build:transpile": "babel src -d lib",
-    "prebuild": "npm run lint && npm test && npm run clean"
+    "start": "parallelshell 'npm run build:watch' 'npm run lint:watch'",
+    "clean": "rm -rf lib",
+    "build": "babel src -d lib",
+    "build:watch": "npm run build -- --watch",
+    "prebuild": "npm run lint && npm run clean"
   },
   "author": "Jeron Diovis <void.jeron.diovis@gmail.com>",
   "license": "MIT",
@@ -29,20 +25,18 @@
     "babel-cli": "^6.16.0",
     "babel-core": "^6.16.0",
     "babel-eslint": "^7.0.0",
-    "babel-loader": "^6.2.5",
     "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-class-properties": "^6.16.0",
     "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
     "babel-preset-stage-2": "^6.16.0",
-    "chai": "^3.5.0",
     "eslint": "^3.6.1",
-    "eslint-loader": "^1.5.0",
+    "eslint-plugin-react": "^6.3.0",
     "eslint-watch": "^2.1.14",
-    "mocha": "^3.1.0",
-    "parallelshell": "^2.0.0",
-    "sinon": "^1.17.6",
-    "webpack": "^1.13.2",
-    "webpack-error-notification": "^0.1.6",
-    "webpack-info-plugin": "^0.1.0"
+    "parallelshell": "^2.0.0"
+
+  },
+  "dependencies": {
+    "bundle-loader": "^0.5.4"
   }
 }

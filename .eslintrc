@@ -1,16 +1,18 @@
 {
   "parser": "babel-eslint",
   "env": {
-    "es6": true,
-    "browser": true
+    "node": true
   },
+  "plugins": [
+    "react"
+  ],
   "parserOptions": {
     "ecmaFeatures": {
       "modules": true,
       "experimentalObjectRestSpread": true
     }
   },
-  "extends": [ "eslint:recommended" ],
+  "extends": [ "eslint:recommended", "plugin:react/recommended" ],
   "rules": {
     "no-console": 0,
     "no-inner-declarations": 0,
@@ -29,7 +31,7 @@
     ],
     "semi": [
       1,
-      "always"
+      "never"
     ],
     "no-var": 1,
     "prefer-const": 1,
@@ -54,6 +56,7 @@
     "curly": 2,
     "no-dupe-keys": 2,
     "no-mixed-spaces-and-tabs": 2,
+    "no-unexpected-multiline": 2,
     "no-labels": 2,
     "no-extra-bind": 2,
     "no-redeclare": 2,
