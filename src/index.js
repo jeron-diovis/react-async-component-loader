@@ -36,7 +36,7 @@ loader.pitch = function(remainingRequest, precedingRequest) {
   // you'd need to always put config for react-async-component loader *before* that one.
   //
   // With this approach, just add config for react-async-component loader wherever you want, and enjoy.
-  const request = [ `bundle?${bundleQs}`, precedingRequest, remainingRequest ].filter(x => x).join("!");
+  const request = [ `bundle?${bundleQs}`, precedingRequest, remainingRequest ].filter(x => x).join("!")
 
   return `
     var React = require('react');
